@@ -1,0 +1,49 @@
+body{
+    background-color: #FFB74D;
+}
+
+#myDivId{    background: #ccc;
+    color: white;
+    padding: 6px;
+    overflow: hidden;
+    position: relative;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    margin-bottom: 2%;
+}
+.content{
+    z-index:9;
+    position:relative;
+}
+.progress{
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    background: blue;
+    left: 0px;
+    top: 0px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+}
+
+.custom{
+    background-color: #FFE0B2;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    border-radius: 25px;
+}
+
+.font{
+    font-family: 'Caveat Brush', cursive;
+    font-size: 31px;
+    color:#009688;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Caveat Brush', cursive;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.61);
+}

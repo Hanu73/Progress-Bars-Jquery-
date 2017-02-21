@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Progress Bars</title>
+    <script src="js/jquery.js"></script>
+    <script src="css/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12">
+                <h1> Progress Bars with animation using Jquery</h1>
+
+            </div>
+        </div>
+        <div class="row custom">
+    <div class="col-md-12 col-xs-12 col-sm-12">
+    <div class="col-md-4">
+        <p class="font">Low</p>
+    </div>
+        <div class="col-md-4">
+            <p class="text-center font">
+                Medium
+            </p>
+        </div>
+        <div class="col-md-4 pull-right">
+            <p class="pull-right font"> High </p>
+        </div>
+        </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+        <div id='myDivId'>
+            <div class="progress"></div>
+            <div class="content">
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+<script>
+    $(document).ready(function(){
+
+        $('#myDivId').click(function(e) {
+
+            var posX = $(this).position().left,posY = $(this).position().top;
+          /*  alert( (e.pageX - posX));*/
+            var widthValue= (e.pageX - posX)
+            $('.progress').animate({ width: widthValue}, 1000);
+        });
+    })
+</script>
+</html>
